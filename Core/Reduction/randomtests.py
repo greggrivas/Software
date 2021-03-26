@@ -36,7 +36,7 @@ class Reduction(QtCore.QObject):
     # Master Dark routine
     def get_master_dark(self,darklist):
         combined_dark = cp.combine(self.darklist, method='median', unit='adu')           # Combines them using the combine function
-        combined_dark.meta['combined'] = True                                       # Adds the keyword COMBINED to the header
+        combined_dark.meta['combined'] = True                                            # Adds the keyword COMBINED to the header
         combined_dark.write(Path(os.path.join(self.data_dir,'reduced_frames')) / "master_dark.fit")               # Writes the master dark
 
     # Master Flat routine

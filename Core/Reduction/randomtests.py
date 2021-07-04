@@ -11,9 +11,7 @@ import numpy as np
 from PyQt5 import QtCore
 
 
-class Reduction(QtCore.QObject):
-    
-
+class Reduction:
     def __init__(self,data_dir):
         self.data_dir = Path(data_dir)
         os.makedirs(os.path.join(self.data_dir,'reduced_frames'))
@@ -30,7 +28,6 @@ class Reduction(QtCore.QObject):
         self.combined_bias = cp.combine(self.biaslist, method='median', unit='adu')                          # Combines them using the combine function
         self.combined_bias.meta['combined'] = True                                                           # Adds the keyword COMBINED to the header
         self.combined_bias.write(Path(os.path.join(self.data_dir,'reduced_frames')) / "master_bias.fit")     # Writes the master bias
-        print('i am in here')
         
 
     # Master Dark routine

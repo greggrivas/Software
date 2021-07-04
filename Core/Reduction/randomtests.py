@@ -11,7 +11,7 @@ import numpy as np
 from PyQt5 import QtCore
 
 
-class Reduction(QtCore.QObject):
+class Reduction:
     
 
     def __init__(self,data_dir):

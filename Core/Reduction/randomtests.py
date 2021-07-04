@@ -59,5 +59,3 @@ class Reduction(QtCore.QObject):
 data_dir = (r'C:\Users\PC-CP\Desktop\tres1b')
 test = Reduction(data_dir)
 test.get_master_bias()
-#ADDED COMMENT FOR GIT TEST#
-#more tests

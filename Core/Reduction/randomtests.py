@@ -9,7 +9,7 @@ from ccdproc import CCDData
 from matplotlib import pyplot as plt
 import numpy as np
 from PyQt5 import QtCore
-from astropy.stats import mad_std
+
 
 
 class Reduction:
@@ -23,7 +23,6 @@ class Reduction:
         self.darklist = im_collection.files_filtered(imagetyp='Dark Frame',  include_path=True) # Filters the Dark frames
         self.flatlist = im_collection.files_filtered(imagetyp='Flat Field',  include_path=True) # Filters the Flat frames
         # print(self.flatlist)
-   
 
     def get_master_bias(self):
        # Master Bias routine

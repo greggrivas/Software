@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>459</width>
-    <height>300</height>
+    <height>325</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -19,7 +19,7 @@
   <property name="maximumSize">
    <size>
     <width>459</width>
-    <height>300</height>
+    <height>325</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -63,53 +63,7 @@ QGroupBox::title {
           <string>SIMBAD</string>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="1" column="0">
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLabel" name="label">
-              <property name="font">
-               <font>
-                <family>Arial</family>
-                <pointsize>11</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Object ID:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="simbad_obj_name"/>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QRadioButton" name="simbad_enable">
-              <property name="font">
-               <font>
-                <family>Arial</family>
-                <pointsize>11</pointsize>
-               </font>
-              </property>
-              <property name="text">
-               <string>Enable</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item row="2" column="0" colspan="2">
+          <item row="3" column="0" colspan="2">
            <widget class="QGroupBox" name="J2000">
             <property name="minimumSize">
              <size>
@@ -183,7 +137,7 @@ QGroupBox::title {
                   </font>
                  </property>
                  <property name="text">
-                  <string>hh:mm:ss</string>
+                  <string/>
                  </property>
                  <property name="placeholderText">
                   <string>hh:mm:ss</string>
@@ -212,7 +166,7 @@ QGroupBox::title {
                   </font>
                  </property>
                  <property name="text">
-                  <string>+/-dd:mm:ss</string>
+                  <string/>
                  </property>
                  <property name="placeholderText">
                   <string>+/-dd:mm:ss</string>
@@ -223,6 +177,89 @@ QGroupBox::title {
              </item>
             </layout>
            </widget>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Object ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="simbad_obj_name">
+              <property name="minimumSize">
+               <size>
+                <width>170</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="placeholderText">
+               <string>SIMBAD id, planet name, etc</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="simbad_enable">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Enable</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>SIMBAD Target:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
           </item>
           <item row="1" column="1">
            <spacer name="horizontalSpacer">
@@ -267,6 +304,9 @@ QGroupBox::title {
           <string>MANUAL</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
           <item row="0" column="0">
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
@@ -422,7 +462,7 @@ QGroupBox::title {
                   </font>
                  </property>
                  <property name="text">
-                  <string>hh:mm:ss</string>
+                  <string/>
                  </property>
                  <property name="placeholderText">
                   <string>hh:mm:ss</string>
@@ -451,7 +491,7 @@ QGroupBox::title {
                   </font>
                  </property>
                  <property name="text">
-                  <string>+/-dd:mm:ss</string>
+                  <string/>
                  </property>
                  <property name="placeholderText">
                   <string>+/-dd:mm:ss</string>

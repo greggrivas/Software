@@ -1,0 +1,15 @@
+directory: ''
+target: ''
+planet_simbad: False
+planet_manually: False
+header_ra_dec: ''
+manual_ra_dec: ''
+simbad_target_name: ''
+exposure_time_iden: 'EXPTIME'
+observation_date_iden: 'DATE-OBS'
+observation_time_iden: 'TIME-OBS'
+bias_files_iden: 'bias'
+dark_files_iden: 'dark'
+flat_files_iden: 'flat'
+raw_files_iden: 'raw'
+# Add variables for the process stages!!

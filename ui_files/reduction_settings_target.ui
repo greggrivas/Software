@@ -85,8 +85,17 @@ QGroupBox::title {
             </item>
             <item>
              <widget class="QLineEdit" name="directory_path_qline">
+              <property name="font">
+               <font>
+                <family>Ariel</family>
+                <pointsize>10</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
               <property name="styleSheet">
-               <string notr="true">font: 10pt &quot;HoloLens MDL2 Assets&quot;;</string>
+               <string notr="true">font: 10pt &quot;Ariel&quot;;</string>
               </property>
               <property name="inputMask">
                <string/>
@@ -304,6 +313,12 @@ QGroupBox::title {
                 <height>16777215</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string/>
               </property>
@@ -325,6 +340,12 @@ QGroupBox::title {
                 <width>260</width>
                 <height>16777215</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
               </property>
               <property name="text">
                <string/>
@@ -348,6 +369,12 @@ QGroupBox::title {
                 <height>16777215</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
               <property name="placeholderText">
                <string>flat</string>
               </property>
@@ -366,6 +393,15 @@ QGroupBox::title {
                 <width>260</width>
                 <height>16777215</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
               </property>
               <property name="placeholderText">
                <string>raw</string>
@@ -549,6 +585,12 @@ QGroupBox::title {
                 <height>16777215</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
               <property name="placeholderText">
                <string>EXPTIME</string>
               </property>
@@ -567,6 +609,12 @@ QGroupBox::title {
                 <width>226</width>
                 <height>16777215</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
               </property>
               <property name="text">
                <string/>
@@ -589,6 +637,12 @@ QGroupBox::title {
                 <width>226</width>
                 <height>16777215</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+               </font>
               </property>
               <property name="placeholderText">
                <string>DATE-OBS</string>
@@ -801,6 +855,145 @@ QGroupBox::title {
           <string>Target</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_3">
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="target_manually_btn">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Select Manually</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Filter Type:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="filter_combobox">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <item>
+               <property name="text">
+                <string>No filter</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>U</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>B</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>V</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>R</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>I</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>H</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>J</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>K</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>UV</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Rc</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Ic</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Re</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Ie</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
           <item row="0" column="0">
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
@@ -948,30 +1141,9 @@ QGroupBox::title {
            </layout>
           </item>
           <item row="1" column="0">
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
             <item>
-             <widget class="QPushButton" name="target_manually_btn">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Arial</family>
-                <pointsize>10</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Select Manually</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="label_7">
+             <widget class="QLabel" name="label_3">
               <property name="font">
                <font>
                 <family>Arial</family>
@@ -979,100 +1151,28 @@ QGroupBox::title {
                </font>
               </property>
               <property name="text">
-               <string>Filter Type:</string>
+               <string>Planet:</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="filter_combobox">
-              <property name="minimumSize">
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>30</height>
+                <height>16777215</height>
                </size>
               </property>
               <property name="font">
                <font>
                 <family>Arial</family>
                 <pointsize>10</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
                </font>
               </property>
-              <item>
-               <property name="text">
-                <string>No filter</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>U</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>B</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>V</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>R</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>I</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>H</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>J</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>K</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>UV</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Rc</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Ic</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Re</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Ie</string>
-               </property>
-              </item>
              </widget>
             </item>
             <item>
-             <spacer name="horizontalSpacer_6">
+             <spacer name="horizontalSpacer_8">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
